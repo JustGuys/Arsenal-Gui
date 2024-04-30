@@ -1,0 +1,30 @@
+local Tab = Window:MakeTab({
+	Name = "Arsenal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Arsenal"
+})
+
+Tab:AddButton({
+	Name = "Aimbot",
+	Callback = function()
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/JustGuys/ArsenalScript/main/Aimbot'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Esp",
+	Callback = function()
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/JustGuys/ArsenalScript/main/Esp'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "No Recoil",
+	Callback = function()
+        loadstring(game:HttpGetAsync('https://raw.githubusercontent.com/JustGuys/ArsenalScript/main/No%20Recoil'))()
+  	end    
+})
