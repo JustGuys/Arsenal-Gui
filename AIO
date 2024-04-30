@@ -1,11 +1,13 @@
--- Function to execute a script from a URL
+-- Function to execute a script from a URL using OrionLib function
 local function executeScript(scriptUrl)
-    loadstring(game:HttpGet(scriptUrl))()
+    -- Replace OrionLibFunction with the appropriate function from OrionLib
+    OrionLibFunction.executeScriptFromUrl(scriptUrl)
 end
 
--- Function to check if the current place matches the given place ID
+-- Function to check if the current place matches the given place ID using OrionLib function
 local function checkPlace(placeID)
-    return game.PlaceId == placeID
+    -- Replace OrionLibFunction with the appropriate function from OrionLib
+    return OrionLibFunction.getCurrentPlaceId() == placeID
 end
 
 -- Define tabs and buttons for each game
